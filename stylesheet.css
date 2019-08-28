@@ -1,0 +1,255 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.right-view {
+  position: relative;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.right-view__activity {
+  width: 95%;
+  margin-top: 20px;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-view__container {
+  position: relative;
+  width: 95%;
+  height: 100%;
+}
+
+.right-view__activity__header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0a5e96;
+  opacity: 0.5;
+}
+
+.right-view__activity__description {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666;
+}
+
+.right-view__activity__date {
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: bold;
+  color: #aaa;
+}
+
+.right-view__activity-last {
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width:320px) {
+  .left-view-container {
+    position: absolute;
+    background-color: #0a5e96;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .left-view {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-view__header {
+    font-weight: bold;
+    font-size: 12vw;
+    color: #fff;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    left: 10%;
+  }
+
+  #left-view__header-first {
+    top: 10%;
+  }
+  #left-view__header-second {
+    top: calc(10% + 11vw);
+  }
+
+  .left-view__body {
+    font-weight: bold;
+    font-size: 5vw;
+    color: #fff;
+    opacity: 0.75;
+    position: absolute;
+    left: 10%;
+  }
+
+  #left-view__body-first {
+    top: 40%;
+  }
+
+  #left-view__body-second {
+    top: 60%;
+  }
+
+  .right-view-container {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 100%;
+  }
+}
+
+@media only screen and (min-width:800px) {
+  .left-view-container {
+    position: absolute;
+    background-color: #0a5e96;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .left-view {
+    position: relative;
+    width: 95%;
+    height: 100%;
+  }
+
+  .left-view__header {
+    font-weight: bold;
+    font-size: 5vw;
+    color: #fff;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    left: 10%;
+  }
+
+  #left-view__header-first {
+    top: 25%;
+  }
+  #left-view__header-second {
+    top: calc(25% + 4.5vw);
+  }
+
+  .left-view__body {
+    font-weight: bold;
+    font-size: 2vw;
+    color: #fff;
+    opacity: 0.75;
+    position: absolute;
+    left: 10%;
+  }
+
+  #left-view__body-first {
+    top: 40%;
+  }
+
+  #left-view__body-second {
+    top: 50%;
+  }
+
+  .right-view-container {
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+  }
+}
+
+
+@media only screen and (min-width:1250px) {
+  .left-view-container {
+    position: absolute;
+    background-color: #0a5e96;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .left-view {
+    position: relative;
+    width: 95%;
+    height: 100%;
+  }
+
+  .left-view__header {
+    font-weight: bold;
+    font-size: 5vw;
+    color: #fff;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    left: 10%;
+  }
+
+  #left-view__header-first {
+    top: 20vh;
+  }
+  #left-view__header-second {
+    top: calc(20vh + 4.5vw);
+  }
+
+  .left-view__body {
+    font-weight: bold;
+    font-size: 1.75vw;
+    color: #fff;
+    opacity: 0.75;
+    position: absolute;
+    left: 10%;
+  }
+
+  #left-view__body-first {
+    top: 45%;
+  }
+
+  #left-view__body-second {
+    top: 60%;
+  }
+
+  .right-view-container {
+    position: absolute;
+    background-color: white;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+  }
+}
