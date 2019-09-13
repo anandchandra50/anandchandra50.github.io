@@ -16,10 +16,10 @@ a {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  max-width: 300px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 12px;
 }
 
@@ -32,7 +32,19 @@ a {
   border: none;
   font-family: 'Roboto Slab', serif;
   cursor: pointer;
+  width: 25%;
+}
+
+.options-container-home {
+  max-width: 300px;
+}
+
+.options-container__home-option {
   width: 33%;
+}
+
+.options-container__selected-option {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .mt-2 {
