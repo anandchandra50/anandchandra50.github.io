@@ -1,0 +1,28 @@
+.base-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.base-content {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.base-content__image {
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.base-content__name {
+  margin-top: 8px;
+  font-size: 20px;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
