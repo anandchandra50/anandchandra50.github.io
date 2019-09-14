@@ -42,6 +42,25 @@ body {
   margin-left: 48px;
 }
 
+.left-text {
+  font-size: 26px;
+  color: white;
+  color: rgba(255, 255, 255, 0.15);
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  transform: rotate(-90deg) translate(0, -100%);
+	transform-origin: 100% 0;
+  position: fixed;
+  width: 360px;
+  left: -300px;
+  height: 40px;
+  bottom: 360px;
+}
+
 @media only screen and (max-width:600px) {
   .item-container {
     margin-top: 48px;
@@ -63,6 +82,10 @@ body {
     flex-direction: column;
     margin-left: 0;
   }
+
+  .left-text {
+    color: black;
+  }
 }
 
 .text-container__header {
@@ -83,25 +106,6 @@ body {
   font-size: 16px;
   color: white;
   color: rgba(255, 255, 255, 0.33);
-}
-
-.left-text {
-  font-size: 26px;
-  color: white;
-  color: rgba(255, 255, 255, 0.15);
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-  transform: rotate(-90deg) translate(0, -100%);
-	transform-origin: 100% 0;
-  position: fixed;
-  width: 360px;
-  left: -300px;
-  height: 40px;
-  bottom: 360px;
 }
 
 .text-link {
