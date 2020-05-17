@@ -44,8 +44,7 @@ body {
 
 .left-text {
   font-size: 26px;
-  color: white;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(0, 0, 0, 0.15);
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -91,24 +90,20 @@ body {
 .text-container__header {
   font-size: 20px;
   font-weight: 800;
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .text-container__dates {
   font-size: 16px;
-  color: white;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .text-container__body {
   margin-top: 12px;
   font-size: 16px;
-  color: white;
-  color: rgba(255, 255, 255, 0.33);
+  color: rgba(0, 0, 0, 0.33);
 }
 
 .text-link {
-  color: white;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }

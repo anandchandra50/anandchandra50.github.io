@@ -9,16 +9,14 @@
 
 .about-header {
   font-size: 30px;
-  color: white;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   width: 100%;
   margin: 24px auto 0 auto;
 }
 
 .about-text {
   font-size: 20px;
-  color: white;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   width: 100%;
   margin: 0 auto 48px auto;
 }

@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto Slab', serif;
-  background-color: #000000;
+  background-color: #fcf6e6;
 }
 
 * {
@@ -26,7 +26,7 @@ a {
 .options-container__options {
   font-size: 16px;
   color: #444;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(0, 0, 0, 0.25);
   text-align: center;
   background: none;
   border: none;
@@ -44,7 +44,7 @@ a {
 }
 
 .options-container__selected-option {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(0, 0, 0, 0.60);
 }
 
 .mt-2 {
