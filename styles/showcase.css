@@ -83,7 +83,7 @@ body {
   }
 
   .left-text {
-    color: black;
+    visibility: hidden;
   }
 }
 
