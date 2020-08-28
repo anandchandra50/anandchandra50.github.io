@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="/styles/home.css" rel="stylesheet" type="text/css">
     <link href="/styles/base.css" rel="stylesheet" type="text/css">
+    <link href="/styles/mdb.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="57x57" href="/favicon-info/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/favicon-info/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/favicon-info/apple-icon-72x72.png">
@@ -48,15 +49,75 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-  <div class="base-container">
-    <div class="base-content">
-      <img class="base-content__image" src="/images/prof.jpg" alt="profile"/>
-      <div class="base-content__name">
-        Anand Chandra
+  <!-- HOME -->
+  <div class="home">
+    <div class="home__grid">
+      <div class="home__profile block">
+        <div class="block-default overflow-hidden">
+          <img class="home__profile-image" src="./images/home/profile.JPG" alt="cover-image"/>
+        </div>
+        <p class="caption mt-caption">Photo shot at The Avenues in San Francisco.</p>
       </div>
-      <div class="options-container options-container-home">
-        <a class="options-container__options options-container__home-option" href="/pages/developer">Developer</a>
-        <a class="options-container__options options-container__home-option" href="/pages/designer">Designer</a>
+      <div class="home__header block">
+        <div class="block-default">
+          <div class="home__header__text">STUDIO of A.C.</div>
+        </div>
+      </div>
+      <div class="home__contact block">
+        <div class="block-default">
+          <h6>
+            <a href="./files/resume.pdf" download class="home__contact__button">Resume</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="mailto:anandchandra@berkeley.edu" class="home__contact__button">Email</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/anandchandra/" target="_blank" class="home__contact__button">LinkedIn</a>
+        </div>
+      </div>
+      <div class="home__bio block">
+        <div class="block-default">
+          <div class="home__bio__container">
+            <h5>EECS at UC Berkeley, class of 2022. Trained engineer, self-taught designer. Seeking internships for software engineering, product design, and project manager roles. View design works below.</h5>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PAGE CONTENT -->
+  <div class="page">
+    <!-- MDB -->
+    <div class="mdb">
+      <!-- Header -->
+      <div class="mdb__header block">
+        <div class="block-default">
+          <h1>MDB<h1>
+        </div>
+      </div>
+      <!-- Description -->
+      <div class="mdb__desc block">
+        <div class="block-default">
+          <h6>Design work for Mobile Developers of Berkeley, a student-run tech organization.</h6>
+        </div>
+      </div>
+      <!-- Banner 1 -->
+      <div class="mdb__banner-1 block">
+        <div class="block-default overflow-hidden">
+          <img class="showcase__image" src="./images/mdb/banner-for-dark.png" alt="final-banner"/>
+        </div>
+        <p class="caption mt-caption">Banner. 3280 x 1440, visual graphic</p>
+      </div>
+      <!-- Frame -->
+      <div class="mdb__frame block">
+        <div class="block-default block-border overflow-hidden">
+          <img class="showcase__image" src="./images/mdb/frame.png" alt="frame"/>
+        </div>
+        <p class="caption mt-caption">Frame. 1 x 1, visual graphic</p>
+      </div>
+      <!-- Banner 2 -->
+      <div class="mdb__banner-2 block">
+        <div class="block-default overflow-hidden">
+          <img class="showcase__image" src="./images/mdb/banner-alt-1.png" alt="final-banner"/>
+        </div>
+        <p class="caption mt-caption">Banner. 3280 x 1440, visual graphic</p>
       </div>
     </div>
   </div>

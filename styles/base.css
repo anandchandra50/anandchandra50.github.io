@@ -1,6 +1,7 @@
 body {
-  font-family: 'Roboto Slab', serif;
-  background-color: #fcf6e6;
+  font-family: 'Helvetica', sans-serif;
+  background-color: #0D0D0D;
+  color: #FAF8F8;
 }
 
 * {
@@ -10,43 +11,127 @@ body {
 
 a {
   text-decoration: none;
+  color: #FAF8F8;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
-.options-container {
+h5 {
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+h6 {
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 133.333%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: -6px;
+}
+
+p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* Utilities */
+.bg-white {
+  background: #FDFDFA;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  margin-top: 12px;
 }
 
-.options-container__options {
-  font-size: 16px;
-  color: #444;
-  color: rgba(0, 0, 0, 0.25);
-  text-align: center;
-  background: none;
-  border: none;
-  font-family: 'Roboto Slab', serif;
-  cursor: pointer;
-  width: 25%;
+/* Blocks */
+
+.block {
+  /* Each block of the big grid has its own grid to control caption and column margins */
+  /* Save one block of 12px on the bottom, two blocks of 12px on the right */
+  display: grid;
+  grid-template-columns: [col-start] minmax(0, 1fr) [col-end cg1-start] 12px [cg1-end cg2-start] 12px [cg2-end];
+  grid-template-rows: [row-start] minmax(0, 1fr) [row-end rg-start] 18px [rg-end];
+  column-gap: 0px;
+  row-gap: 0px;
 }
 
-.options-container-home {
-  max-width: 300px;
+.block-default {
+  grid-column-start: col-start;
+  grid-column-end: col-end;
+  grid-row-start: row-start;
+  grid-row-end: row-end;
 }
 
-.options-container__home-option {
-  width: 33%;
+.block-full-width {
+  grid-column-start: col-start;
+  grid-column-end: cg2-end;
+  grid-row-start: row-start;
+  grid-row-end: row-end;
 }
 
-.options-container__selected-option {
-  color: rgba(0, 0, 0, 0.60);
+.block-full-height {
+  grid-column-start: col-start;
+  grid-column-end: col-end;
+  grid-row-start: row-start;
+  grid-row-end: rg-end;
 }
 
-.mt-2 {
-  margin-top: 18px;
+.showcase {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 100%;
+}
+
+.showcase__image-center {
+  margin: auto;
+  object-fit: cover;
+  max-height: calc(100% - 18px);
+  max-width: 100%;
+}
+
+.showcase__image {
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.block-border {
+  border-top: 1px #666 solid;
+  border-bottom: 1px #666 solid;
+}
+
+
+/* Captions */
+
+.caption {
+  grid-column-start: col-start;
+  grid-column-end: col-end;
+  grid-row-start: rg-start;
+  grid-row-end: rg-end;
+}
+
+.mt-caption {
+  margin-top: 4px;
 }

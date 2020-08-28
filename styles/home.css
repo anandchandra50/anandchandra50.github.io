@@ -1,27 +1,71 @@
-.base-container {
-  display: flex;
+.home {
+  /* Home container */
   width: 100vw;
   height: 100vh;
 }
 
-.base-content {
-  width: 100vw;
-  margin: auto;
+.home__grid {
+  /* Grid for home page only */
+  display: grid;
+  margin: 18px 0px 12px 24px;
+  max-width: 100%;
+  height: calc(100vh - 18px - 12px);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 12px; /* Will create units within each column for margin buffers */
+  row-gap: 6px; /* Same here */
+}
+
+.home__profile {
+  grid-column: 1 / 4;
+  grid-row: 2 / 6;
+}
+
+.home__profile-image {
+  object-position: 50% 50%;
+  object-fit: cover;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.home__header {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.home__header__text {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 61.5px;
+}
+
+.home__contact {
+  grid-column: 4 / 6;
+  grid-row: 4 / 5;
+}
+
+.home__contact__button {
+  cursor: pointer;
+}
+
+.home__bio {
+  grid-column: 4 / 6;
+  grid-row: 5 / 6;
+}
+
+.home__bio__container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.page {
+  /* Layout for showcase content. */
+  padding-top: 16vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.base-content__image {
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-}
-
-.base-content__name {
-  margin-top: 8px;
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.8);
-  text-align: center;
+  margin: 18px 36px 12px 24px;
+  max-width: 100%;
 }
