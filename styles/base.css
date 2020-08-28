@@ -63,6 +63,14 @@ p {
 }
 
 /* Blocks */
+.section {
+  /* Showcase all work for a given section */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  column-gap: 12px; /* Will create units within each column for margin buffers */
+  row-gap: 18px;
+}
 
 .block {
   /* Each block of the big grid has its own grid to control caption and column margins */
