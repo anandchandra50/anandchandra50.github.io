@@ -166,7 +166,7 @@ p {
 
   .page {
     /* Layout for showcase content. */
-    padding-top: 12vw;
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     margin: 18px 36px 12px 24px;

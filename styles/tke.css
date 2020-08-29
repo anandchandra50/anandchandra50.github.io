@@ -40,8 +40,8 @@
 
 @media only screen and (max-width:600px) {
   .tke {
-    grid-template-rows: repeat(35, 6vw);
-    margin-top: 6vw;
+    grid-template-rows: repeat(33, 6vw);
+    margin-top: 12vw;
   }
 
   .tke__header {
@@ -71,11 +71,11 @@
 
   .tke__banner {
     grid-column: 1 / 4;
-    grid-row: 25 / 29;
+    grid-row: 24 / 28;
   }
 
   .tke__square {
     grid-column: 1 / 3;
-    grid-row: 30 / 35;
+    grid-row: 28 / 33;
   }
 }

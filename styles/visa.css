@@ -26,7 +26,7 @@
 @media only screen and (max-width:600px) {
   .visa {
     grid-template-rows: repeat(13, 6vw);
-    margin-top: 6vw;
+    margin-top: 12vw;
   }
 
   .visa__header {

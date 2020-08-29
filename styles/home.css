@@ -26,6 +26,7 @@
   object-fit: cover;
   max-width: 100%;
   min-height: 100%;
+  overflow: hidden;
 }
 
 .home__header {
@@ -65,7 +66,7 @@
   .home {
     /* Home container */
     width: 100vw;
-    height: 66.667vh;
+    height: 100vh;
   }
 
   /* Mobile */
@@ -79,6 +80,14 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 0; /* Will create units within each column for margin buffers */
     row-gap: 6px; /* Same here */
+  }
+
+  .home__profile-image {
+    object-position: 50% 50%;
+    object-fit: cover;
+    max-width: 100%;
+    min-height: 0;
+    overflow: hidden;
   }
 
   .home__profile {
@@ -117,7 +126,11 @@
     grid-row: 4 / 5;
   }
 
-  .mobile__hidden {
-    visibility: hidden;
+  .home__bio__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
