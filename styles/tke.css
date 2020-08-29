@@ -1,5 +1,5 @@
 .tke {
-  grid-template-rows: repeat(40, 6vw);
+  grid-template-rows: repeat(32, 6vw);
   margin-top: 6vw;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .tke__back {
-  grid-column: 2 / 4;
+  grid-column: 1 / 3;
   grid-row: 16 / 22;
 }
 
@@ -34,6 +34,6 @@
 }
 
 .tke__square {
-  grid-column: 2 / 4;
+  grid-column: 1 / 3;
   grid-row: 27 / 32;
 }
