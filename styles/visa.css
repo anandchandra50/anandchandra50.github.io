@@ -1,5 +1,5 @@
 .visa {
-  grid-template-rows: repeat(20, 6vw);
+  grid-template-rows: repeat(12, 6vw);
   margin-top: 6vw;
 }
 
@@ -21,4 +21,31 @@
 .visa__web {
   grid-column: 1 / 5;
   grid-row: 7 / 12;
+}
+
+@media only screen and (max-width:600px) {
+  .visa {
+    grid-template-rows: repeat(13, 6vw);
+    margin-top: 6vw;
+  }
+
+  .visa__header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .visa__desc {
+    grid-column: 2 / 4;
+    grid-row: 1;
+  }
+
+  .visa__slide {
+    grid-column: 1 / 4;
+    grid-row: 3 / 9;
+  }
+
+  .visa__web {
+    grid-column: 1 / 4;
+    grid-row: 9 / 13;
+  }
 }
